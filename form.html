@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form Validation System</title>
+</head>
+<body>
+    <div class="box">
+        <h1>FORM VALIDATION SYSTEM</h1>
+        <p>All the places marked * are mandatory to fill.</p>
+    <form name="validation" onsubmit="return formValid()" method="post" autocomplete="on">
+        <label for="un">*User Id :</label>
+        <input id="un" name="un" class="un" type="text" placeholder="*minimum 5 to 12 letters required." required/>
+        <br>
+        <label for="pw">*Password :</label>
+        <input id="pw" name="pw" type="text"  placeholder="*8 to 15 characters which contain at least one lowercase letter, one numeric digit, and one special character (no upper case letters)" required/>
+        <br>
+        <label for="name">*Name :</label>
+        <input id="name" name="name1" type="text" placeholder="*alphabets only" required/>
+        <br>
+        <label for="address">*Address :</label>
+        <input id="address" name="address" type="text" placeholder="*enter in the following format (house no. ,street name ,city ,state)"/>
+        <br>
+        <label for="ph">*Phone no. :</label>
+        <input id="ph" name="ph" type="text" placeholder="12345-6789" required/>
+        <br>
+        <label for="country">*Conutry Code:</label>
+        <select id="country" name="country" >
+            <option selected="" value="default">( Please select a country )</option>
+        </select>
+        <br>
+        <label for="zip">*ZIP Code :</label>
+        <input id="zip" type="text" name="zip" placeholder="*numeric value only" required/>
+        <br>
+        <label for="email" >*E-mail :</label>
+        <input id="email" name="email" type="text" placeholder="characters@characters.domain" required/>
+        <br>
+        <label>*Language :
+            <input class="lang" id="english1" type="checkbox" name="english" value="english" ><label for="english1">English</label>
+            <input class="lang"  id="nenglish1" type="checkbox" name="nenglish" value="nenglish" ><label for="nenglish1">Others</label>
+            </label>
+            <br>
+        <label> *Sex : 
+        <input class="sex" id="male1" type="checkbox" name="male" value="male" ><label for="male1">Male</label>
+        <input class="sex" id="female1" type="checkbox" name="female" value="female" ><label for="female1">Female</label>
+        <input class="sex" id="others1" type="checkbox" name="others" value="others" ><label for="others1">Others</label>
+        </label>
+        <br>
+        <label for="desc">About :</label>
+        <br>
+        <textarea name="desc " id="desc" placeholder="optional"></textarea>
+        <br>
+        <input type="submit" name="submit" id="submit" value="Submit" />
+    </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding :0;
+}
+
+.box{
+    border:3px solid black;
+width:70vh;
+padding:1rem;
+background-color: #DAB797;
+border-radius: 2rem;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    background-color: #F3E9DC;
+}
+
+p{
+    margin:1rem;
+}
+
+form label{
+font-size: 1.5rem;
+margin:0.4rem;
+}
+
+#submit{
+    background-color:#5E3023;
+    font-size: 2rem;
+    color:white;
+}
+
+form input{
+    padding:0.8rem;
+    margin:0.4rem;
+    border-radius:4px;
+    background-color: #DDD4C8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#country,#desc{
+    background-color: #DDD4C8;
+    font-size:1.3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#un,#pw,#name,#address,#email,#ph,#zip{
+    width:90%;
+}
+
+.sex,.lang{
+    background-color: #DDD4C8;
+}
+
+form select{
+    margin:0.5rem 0rem 0.5rem 0.5rem;
+}
